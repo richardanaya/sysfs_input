@@ -2,6 +2,12 @@
 
 <a href="https://docs.rs/sysfs_input"><img src="https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square" alt="docs.rs docs" /></a>
 
+```
+[dependencies]
+sysfs_input = "0.0"
+```
+
+
 A library for discovering and interacting with `sysfs` input devices. This library was born out of a desire to understand the mouse/touchscreen inputs of a linux system purely using it's filesystem (e.g. `/sys` ) to do cool things without X11. 
 
 ```
