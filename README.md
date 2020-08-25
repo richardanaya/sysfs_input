@@ -16,7 +16,7 @@ To simply flex out this library try
 cargo run --example scan
 ```
 
-se
+# License
 
 This project is licensed under either of
 
