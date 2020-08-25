@@ -65,13 +65,15 @@ pub fn input_devices() -> Result<Vec<Device>, std::io::Error> {
                 }))
             }
         } else if name.starts_with("event") {
-            let link = fs::read_link(&format!(
-                "/sys/class/input/{}/device",
-                name
-            ))?;
+            let link = fs::read_link(&format!("/sys/class/input/{}/device", name))?;
             v.push(Device::Event(EventDevice {
                 file_name: entry.file_name().into_string().unwrap(),
-                device_name: link.file_name().unwrap().to_os_string().into_string().unwrap(),
+                device_name: link
+                    .file_name()
+                    .unwrap()
+                    .to_os_string()
+                    .into_string()
+                    .unwrap(),
             }))
         }
     }
