@@ -2,7 +2,7 @@
 
 <a href="https://docs.rs/sysfs_input"><img src="https://img.shields.io/badge/docs-latest-blue.svg?style=flat-square" alt="docs.rs docs" /></a>
 
-```
+```toml
 [dependencies]
 sysfs_input = "0.0"
 ```
